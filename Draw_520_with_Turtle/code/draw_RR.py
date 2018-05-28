@@ -1,0 +1,82 @@
+"""绘制RR"""
+from turtle import *
+import math
+
+
+def draw():
+    # 移动到5的下面
+    penup()
+    pensize(1)
+    right(90)
+    forward(210)
+    left(90)
+    forward(15)
+
+    # 在5的下面绘制RR
+
+    # 第一个R
+    color("black", "black")
+    begin_fill()
+    pendown()
+    forward(40)
+    left(90)
+    forward(10)
+    left(90)
+    forward(30)
+    right(90)
+    forward(20)
+    right(90)
+    forward(5)
+    right(90)
+    forward(19)
+    left(90)
+    forward(10)
+    left(45)
+    forward(int(math.sqrt(pow(15, 2) + pow(25, 2))))
+    left(90)
+    forward(10)
+    left(90)
+    forward(int(math.sqrt(pow(10, 2) + pow(25, 2))))
+    right(135)
+    forward(15)
+    left(90)
+    forward(15)
+    left(90)
+    forward(40)
+    end_fill()
+
+    # 移动到画第二个R的起点，相隔2px吧
+    penup()
+    backward(42)
+    left(90)
+
+    # 画第二个R
+    color("black", "black")
+    begin_fill()
+    pendown()
+    forward(40)
+    left(90)
+    forward(10)
+    left(90)
+    forward(30)
+    right(90)
+    forward(20)
+    right(90)
+    forward(5)
+    right(90)
+    forward(19)
+    left(90)
+    forward(10)
+    left(45)
+    forward(int(math.sqrt(pow(15, 2) + pow(25, 2))))
+    left(90)
+    forward(10)
+    left(90)
+    forward(int(math.sqrt(pow(10, 2) + pow(25, 2))))
+    right(135)
+    forward(15)
+    left(90)
+    forward(17)
+    left(90)
+    forward(40)
+    end_fill()
