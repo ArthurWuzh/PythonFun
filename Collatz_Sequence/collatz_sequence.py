@@ -28,20 +28,24 @@ def verify(num):
     """判断结果里的不是1的数"""
     return 1 != num
 
-
-
-if __name__ == "__main__":
+def main():
     # 存放验证考拉咨猜想函数的结果
     result = []
     for i in range(START_NUMBER, END_NUMBER):
         # 验证START_NUMBER, END_NUMBER之间的数
         result.append(collatz_seq(i))
     # 使用filter对结果进行判断是否存在非1的数
-    print(list(filter(verify,result)))
+    print(list(filter(verify, result)))
     """
         filter(function or None, iterable) --> filter object
 
         Return an iterator yielding those items of iterable for which function(item)
         is true. If function is None, return the items that are true.
     """
+
+
+if __name__ == "__main__":
+    main()
+
+
 
