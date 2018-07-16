@@ -1,3 +1,8 @@
+"""
+以对此源代码进行更新,进行分模块以及使用多线程提供背景音乐播放
+源代码最新地址: https://github.com/RidingRoad/PythonFun/tree/master/Draw_520_with_Turtle
+"""
+
 from turtle import *
 import math,sys
 
