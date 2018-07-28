@@ -4,7 +4,7 @@ __author__ = "RidingRoad 公众号 Python孙行者"
 
 import re
 
-def strong_password_detection(password):
+
     """
     强口令:长度不少于8个字符,同时包含大小写字母,至少有一位数字
     :param password: 待检测强度的密码
@@ -16,7 +16,7 @@ def strong_password_detection(password):
     # 3.使用一个正则检测是否有大写字母
     # 4.使用一个正则检测是否有小写字母
     # 5.上面四个条件都为真的话,就返回True,否则返回False
-
+def strong_password_detection(password):
     length_flag = False # 长度标志
     digit_flag = False  # 数字标志
     upper_flag = False  # 大写标志
