@@ -84,16 +84,16 @@ def draw_comment(name):
 
 if __name__ == '__main__':
     # 首先绘制爱情公寓
-    # love_count_star = count_star(love_data,level_list)
-    # draw_pipe('love', love_count_star, level_list_axios)
-    # draw_bar('love', love_count_star, level_list_axios)
-    # parse_signature(love_data)
-    # draw_comment('love_word_cloud')
+    love_count_star = count_star(love_data,level_list)
+    # draw_pipe('love', love_count_star, level_list_axios) # 绘制饼图
+    # draw_bar('love', love_count_star, level_list_axios) # 绘制柱状图
+    # parse_signature(love_data) # 准备词云的词汇
+    # draw_comment('love_word_cloud') # 绘制词云 ，和上一行同时执行
 
 
     # 绘制一出好戏
-    # a_good_show_count_star = count_star(a_good_show_data, level_list)
-    # draw_pipe('a_good_show', a_good_show_count_star, level_list_axios)
-    # draw_bar('a_good_show', a_good_show_count_star, level_list_axios)
-    parse_signature(a_good_show_data)
-    draw_comment('a_good_show_word_cloud')
+    a_good_show_count_star = count_star(a_good_show_data, level_list)
+    # draw_pipe('a_good_show', a_good_show_count_star, level_list_axios) # 绘制饼图
+    # draw_bar('a_good_show', a_good_show_count_star, level_list_axios)# 绘制柱状图
+    #parse_signature(a_good_show_data) # 准备词云的词汇
+    #draw_comment('a_good_show_word_cloud') # 绘制词云，和上一行同时执行

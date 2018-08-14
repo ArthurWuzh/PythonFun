@@ -5,8 +5,8 @@ import json
 
 class LoveapartmentmovieversionPipeline(object):
     def __init__(self):
-        # self.file = open('love.json','w') # 爱情公寓
-        self.file = open('a_good_show.json','w') # 一出好戏
+        # self.file = open('love.json','w') # 爬取爱情公寓影评就取消注释
+        self.file = open('a_good_show.json','w') # 爬取一路好戏影评就取消注释
 
     def process_item(self, item, spider):
         content = json.dumps(dict(item),ensure_ascii=False) + ',\n'

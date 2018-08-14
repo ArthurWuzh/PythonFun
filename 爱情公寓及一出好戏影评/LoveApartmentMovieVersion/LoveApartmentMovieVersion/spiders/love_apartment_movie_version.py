@@ -7,8 +7,8 @@ from ..items import LoveapartmentmovieversionItem
 class LoveApartmentMovieVersionSpider(scrapy.Spider):
     name = 'love_apartment_movie_version'
     allowed_domains = ['movie.douban.com']
-    # start_urls = ['https://movie.douban.com/subject/24852545/comments?start=0&limit=20&sort=new_score&status=P'] # 爱情公寓
-    start_urls = ['https://movie.douban.com/subject/26985127/comments?start=0&limit=20&sort=new_score&status=P'] # 一出好戏
+    # start_urls = ['https://movie.douban.com/subject/24852545/comments?start=0&limit=20&sort=new_score&status=P'] # 爬取爱情公寓
+    start_urls = ['https://movie.douban.com/subject/26985127/comments?start=0&limit=20&sort=new_score&status=P'] # 爬取一出好戏
 
     def parse(self, response):
         for each in response.xpath("//div[@class='comment']"):
