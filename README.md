@@ -6,4 +6,5 @@ Use the Python to enjoy yourself.
 3. Use the random library to generate the Random Authentication Codes.
 4. Use the Python to verify the Collatz Sequence
 5. Use the Python the create the little game:secret number
-6. Use the Python pyperclip to automate unordered lists of markdown document.
+6. Use the Python pyperclip to automate unordered lists of markdown document.<br>
+**and so on.....**
