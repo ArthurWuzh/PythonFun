@@ -1,0 +1,17 @@
+this script can use to upload photo folder to aws s3  
+and you need to fill some parameters.
+最近在工作中需要把本地的图片上传到亚马逊对象存储S3中供外链访问。
+
+为了更快的实现，使用了Python 接口的boto3进行封装，实现批量上传图片到S3
+
+主要有以下的几个函数：
+
+1、实现S3的连接
+
+2、实现单个图片的上传
+
+3、实现单个图片的删除
+
+4、实现整个bucket的内容的清除
+
+5、实现上传整个文件夹里的图片并做去除非文件
